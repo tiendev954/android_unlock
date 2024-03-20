@@ -1,7 +1,8 @@
 plugins {
     id("com.android.application")
-    kotlin("kapt")
     id("realm-android")
+    id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -39,4 +40,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    /* hilt */
+    implementation("com.google.dagger:hilt-android:2.49")
+    annotationProcessor("com.google.dagger:hilt-android-compiler:2.49")
+
+}
+
+kapt {
+    correctErrorTypes = true
 }
