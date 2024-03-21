@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "79061720327",
+    "project_id": "unlock-4fb5d",
+    "storage_bucket": "unlock-4fb5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79061720327:android:fc7ee5cca54cfc701ff9a2",
+        "android_client_info": {
+          "package_name": "android.bxt.unlock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79061720327-uesbfbv76srqcra8gh3vb1l7h1t5e5if.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.bxt.unlock",
+            "certificate_hash": "c49e2fb9b95f7282f1e2696073aa7cf036887aa6"
+          }
+        },
+        {
+          "client_id": "79061720327-5vr1ll38rul9829rfulj6dft96r4j3hb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNGT8fPPoLt5YYYYp_wMyBP0OKwg9WM1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79061720327-5vr1ll38rul9829rfulj6dft96r4j3hb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

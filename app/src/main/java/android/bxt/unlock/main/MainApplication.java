@@ -1,9 +1,8 @@
-package android.bxt.unlock;
+package android.bxt.unlock.main;
 
 import android.app.Application;
 
 import dagger.hilt.android.HiltAndroidApp;
-import io.realm.Realm;
 
 @HiltAndroidApp
 public class MainApplication extends Application {
@@ -11,6 +10,6 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Realm.init(this);
     }
+
 }
