@@ -46,6 +46,10 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.firebase.database)
     implementation(libs.firebase.auth)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.play.services.auth)
+
     implementation(libs.core.ktx)
 
     testImplementation(libs.junit)
@@ -62,6 +66,10 @@ dependencies {
     kapt(libs.databinding.compiler)
     implementation(libs.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
 
 }
 

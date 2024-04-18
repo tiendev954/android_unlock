@@ -1,21 +1,21 @@
 package android.bxt.unlock.ui.home;
 
-import android.bxt.unlock.R;
-import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.bxt.unlock.base.BaseBindingFragment;
+import android.bxt.unlock.databinding.FragmentHomeBinding;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends BaseBindingFragment<FragmentHomeBinding> {
 
     public HomeFragment() {}
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
+    protected FragmentHomeBinding getBinding(LayoutInflater inflater, ViewGroup container) {
+        return FragmentHomeBinding.inflate(inflater, container, false);
+    }
+
+    @Override
+    protected void setupViews() {
+
     }
 }

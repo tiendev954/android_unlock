@@ -1,39 +1,20 @@
 package android.bxt.unlock.ui.splash;
 
-import android.bxt.unlock.R;
-import android.os.Bundle;
+import android.bxt.unlock.base.BaseBindingFragment;
+import android.bxt.unlock.databinding.FragmentSplashBinding;
 import android.os.Handler;
 import android.os.Looper;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.navigation.NavDirections;
 import androidx.navigation.fragment.NavHostFragment;
 
-public class SplashFragment extends Fragment {
+public class SplashFragment extends BaseBindingFragment<FragmentSplashBinding> {
 
     private static final long SPLASH_SCREEN_DELAY = 2000;
 
     public SplashFragment() {
-    }
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_splash, container, false);
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        setupNavigateToLogin();
     }
 
     private void setupNavigateToLogin() {
@@ -41,5 +22,15 @@ public class SplashFragment extends Fragment {
             NavDirections action = SplashFragmentDirections.actionSplashFragmentToLoginFragment();
             NavHostFragment.findNavController(this).navigate(action);
         }, SPLASH_SCREEN_DELAY);
+    }
+
+    @Override
+    protected FragmentSplashBinding getBinding(LayoutInflater inflater, ViewGroup container) {
+        return FragmentSplashBinding.inflate(inflater, container, false);
+    }
+
+    @Override
+    protected void setupViews() {
+        setupNavigateToLogin();
     }
 }

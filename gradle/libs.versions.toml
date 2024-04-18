@@ -1,6 +1,10 @@
 [versions]
 coreKtx = "1.12.0"
+credentials = "1.2.2"
+credentialsPlayServicesAuth = "1.1.0"
 databindingCompiler = "8.3.1"
+firebaseBom = "32.8.1"
+googleid = "1.1.0"
 hiltAndroid = "2.50"
 hiltAndroidCompiler = "2.49"
 junit = "4.13.2"
@@ -14,11 +18,16 @@ navigationFragment = "2.7.7"
 googleServices = "4.4.1"
 firebaseDatabase = "20.3.1"
 firebaseAuth = "22.3.1"
+playServicesAuth = "21.1.0"
 
 [libraries]
+androidx-credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
+androidx-credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragment" }
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 databinding-compiler = { module = "androidx.databinding:databinding-compiler", version.ref = "databindingCompiler" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -34,6 +43,7 @@ navigation-ui = { module = "androidx.navigation:navigation-ui", version.ref = "n
 google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
 
 [plugins]
 

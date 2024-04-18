@@ -4,30 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/splashFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:label="fragment_home"
         android:name="android.bxt.unlock.ui.home.HomeFragment"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_homeFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_friendsFragment"
-            app:destination="@id/friendsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/settingFragment"
-        android:name="android.bxt.unlock.ui.setting.SettingFragment"
-        android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
-    <fragment
-        android:id="@+id/friendsFragment"
-        android:name="android.bxt.unlock.ui.friends.FriendsFragment"
-        android:label="fragment_friends"
-        tools:layout="@layout/fragment_friends" />
+        tools:layout="@layout/fragment_home"/>
     <fragment
         android:id="@+id/loginFragment"
         android:name="android.bxt.unlock.ui.login.LoginFragment"
