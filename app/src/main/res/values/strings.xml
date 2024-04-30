@@ -6,4 +6,7 @@
     <string name="welcome_back">Welcome back</string>
     <string name="default_web_client_id">79061720327-5vr1ll38rul9829rfulj6dft96r4j3hb.apps.googleusercontent.com</string>
     <string name="sign_out">Sign out</string>
+    <string name="create_new_diary_with_unlock">Create new diary with Unlock</string>
+    <string name="title">Title</string>
+    <string name="tell_me_about_it">Tell me about it.</string>
 </resources>

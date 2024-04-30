@@ -1,10 +1,10 @@
 plugins {
     id("com.android.application")
+    kotlin("kapt")
     id("com.google.dagger.hilt.android")
     id("com.google.gms.google-services")
     id("org.jetbrains.kotlin.android")
     id("androidx.navigation.safeargs")
-    kotlin("kapt")
 }
 
 android {
@@ -71,6 +71,9 @@ dependencies {
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
 
+
+    /* glide */
+    implementation(libs.glide)
 }
 
 kapt {

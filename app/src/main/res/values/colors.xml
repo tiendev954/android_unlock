@@ -1,5 +1,8 @@
 
 <resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
     <color name="seed">#FCA311</color>
     <color name="md_theme_light_primary">#855300</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>
@@ -61,4 +64,22 @@
     <color name="md_theme_dark_surfaceTint">#FFB95F</color>
     <color name="md_theme_dark_outlineVariant">#504539</color>
     <color name="md_theme_dark_scrim">#000000</color>
+
+    <color name="NeutralColor">#FF78909C</color>
+    <color name="HappyColor">#FFFFEE58</color>
+    <color name="RomanticColor">#FFEC407A</color>
+    <color name="CalmColor">#FF42A5F5</color>
+    <color name="TenseColor">#FFFF7043</color>
+    <color name="LonelyColor">#FF8D6E63</color>
+    <color name="MysteriousColor">#FF26A69A</color>
+    <color name="AngryColor">#FFEF5350</color>
+    <color name="AwfulColor">#FF66BB6A</color>
+    <color name="SurprisedColor">#FF29B6F6</color>
+    <color name="DepressedColor">#FFBDBDBD</color>
+    <color name="DisappointedColor">#FF78909C</color>
+    <color name="ShamefulColor">#FFAB47BC</color>
+    <color name="HumorousColor">#FFFFCA28</color>
+    <color name="SuspiciousColor">#FFD4E157</color>
+    <color name="BoredColor">#FF26C6DA</color>
+
 </resources>

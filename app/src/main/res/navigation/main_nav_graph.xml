@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress NavigationFile -->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/homeFragment"
-        android:label="fragment_home"
         android:name="android.bxt.unlock.ui.home.HomeFragment"
-        tools:layout="@layout/fragment_home"/>
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_writeFragment"
+            app:destination="@id/writeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="android.bxt.unlock.ui.login.LoginFragment"
@@ -18,19 +24,32 @@
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out"
-            app:popEnterAnim="@android:anim/fade_in"
-            app:popExitAnim="@android:anim/fade_out" />
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashFragment"
         android:name="android.bxt.unlock.ui.splash.SplashFragment"
         android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash" >
+        tools:layout="@layout/fragment_splash">
         <action
             android:id="@+id/action_splashFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
+            app:destination="@id/loginFragment"/>
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/writeFragment"
+        android:name="android.bxt.unlock.ui.write.WriteFragment"
+        android:label="WriteFragment"
+        tools:layout="@layout/fragment_write">
+
+        <argument
+            android:name="diary"
+            app:argType="android.bxt.unlock.data.entity.Diary"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_writeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
 </navigation>

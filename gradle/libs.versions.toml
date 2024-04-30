@@ -4,6 +4,7 @@ credentials = "1.2.2"
 credentialsPlayServicesAuth = "1.1.0"
 databindingCompiler = "8.3.1"
 firebaseBom = "32.8.1"
+glide = "4.16.0"
 googleid = "1.1.0"
 hiltAndroid = "2.50"
 hiltAndroidCompiler = "2.49"
@@ -27,6 +28,7 @@ androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx",
 core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 databinding-compiler = { module = "androidx.databinding:databinding-compiler", version.ref = "databindingCompiler" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
