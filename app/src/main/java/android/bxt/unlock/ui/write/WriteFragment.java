@@ -105,6 +105,7 @@ public class WriteFragment extends BaseBindingFragment<FragmentWriteBinding> {
             binding.pagerMood.setUserInputEnabled(false);
             binding.buttonSave.setVisibility(View.GONE);
             binding.btnDelete.setVisibility(View.GONE);
+            if (!Objects.equals(diary.getOwnerId(), auth.getUid())) binding.btnEdit.setVisibility(View.GONE);
         } else {
             binding.containerEdit.setVisibility(View.GONE);
         }
